@@ -97,7 +97,7 @@ h4 {
     text-shadow:.09375rem .09375rem .09375rem #000;
     font-family:'Alfa Slab One', Garamond, serif;
     text-align:center;
-    padding-bottom: 1.125;
+    padding-bottom: 1.125rem;
     font-weight: normal;
 }
 
@@ -139,15 +139,18 @@ figure {
 
 figcaption {
     padding-top: .5rem;
-    text-decoration: right;
+    text-align: right;
 }
 
 /* Footer */
 
 footer {
-    padding:1rem;
+    padding: 1rem;
     border-top: 2rem;
-    font-style: solid;
+    border-top-style: solid;
     color:#333;
 }
 
+h4 span{
+    padding: 0 .5rem;
+}
