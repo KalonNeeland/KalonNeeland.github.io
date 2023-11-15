@@ -170,11 +170,23 @@ a:hover {
 
 /* List Styling */
 
-ul {}
+ul,
+ol{
+    margin: 1rem 0rem;
+}
 
-ol{}
+ul{
+    list-style-type: square;
+}
 
-.long-list a:hover {}
+ol{
+    list-style-type: lower-alpha;
+}
+
+.long-list a:hover {
+
+    text-transform: uppercase;
+}
 
 
 
@@ -188,7 +200,7 @@ nav {
 }
 
 nav a {
-    
+
     text-decoration: none;
     display:inline-block;
     width: 100%;
@@ -207,14 +219,17 @@ nav a:hover {
 
 }
 
-nav a:active {}
-
-
-
+nav a:active {
+    background-color: #0000;
+    color:#FFF;
+}
 
 /* Footer Styles */
 
-footer {}
+footer {
+
+    text-align: center;
+}
 
 
 
