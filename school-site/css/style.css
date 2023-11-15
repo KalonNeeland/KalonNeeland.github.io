@@ -68,43 +68,26 @@ header, footer {
   border-bottom: .125rem solid #33658A;
 }
 
-/* ------ START WRITING YOUR CODE BELOW THIS LINE ------ */
-
-/* NO changes should be made to any of the code above. */
-
-/* NOTE: While you will be using some of the same CSS properties, the VALUES 
-   may need to be different in order to style the page correctly. */
-
-
-
-/* Imported Typfaces */
-
 /* Headings */
 
-@font-face {
-    
+@font-face {    
     src:
     url("../fonts/josefinslab-regular.ttf"), format('TrueType');
     font-style:normal;
     font-weight:400 normal;
     font-family: "JoseFinsLab";
-
 }
-/* Body / Paragraph */
 
+/* Body / Paragraph */
 @font-face {
     src:
     url("../fonts/montserrat-regular.ttf"), format('TrueType');
     font-style:normal;
     font-weight:400 normal;
     font-family: "Montserrat";
-
 }
 
-
-
 /* Typography Styles */
-
 html {
 
     font-family:Montserrat, Arial, Helvetica, sans-serif;
@@ -126,10 +109,8 @@ h2{
     font-size: 1.5rem;
 }
 
-
 h2 + p {
     text-indent: 1.5rem;
-
 }
 
 p,
@@ -164,12 +145,7 @@ a:hover {
     text-decoration: none;
 }
 
-
-
-
-
 /* List Styling */
-
 ul,
 ol{
     margin: 1rem 0rem;
@@ -187,11 +163,6 @@ ol{
 
     text-transform: uppercase;
 }
-
-
-
-
-
 
 /* Navigation Menu */
 nav {
