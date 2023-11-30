@@ -47,5 +47,186 @@
 
 
 /* ------ START WRITING YOUR CODE BELOW ------ */
+/*----Font Import--*/
+@font-face {    
+    src:
+    url("../fonts/josefinslab-regular.ttf"), format('TrueType');
+    font-style:normal;
+    font-weight:400 normal;
+    font-family: "JoseFinsLab";
+}
+@font-face {
+    src:
+    url("../fonts/montserrat-regular.ttf"), format('TrueType');
+    font-style:normal;
+    font-weight:400 normal;
+    font-family: "Montserrat";
+}
+/* General Setup */
 
+body{
+    padding:0;
+    margin:0;
+    font-size:1rem;
 
+}
+
+main {
+    margin:0 auto;
+    padding-bottom:.25rem;
+    width:90%;
+}
+
+html {
+    font-size:16px;
+}
+
+/* Headings*/
+h1,
+h2 {
+    letter-spacing:.125rem;
+    font-family: JoseFinSlab, Georgia, 'Times New Roman', Times, serif;
+}
+
+h1{
+    font-size: 3.75rem;
+    margin: 1.125rem;
+    text-align: center;
+    width:75%;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+/* NAV */
+
+nav {
+    padding-left: 0;
+    padding-top: .25rem;
+}
+
+nav a {
+    text-decoration: none;
+    display:inline-block;
+    width: 75%;
+    line-height: 3;
+    text-align: center;
+    font-size: 1.125rem;
+    margin-bottom: 1.5rem;
+    border: solid .0625rem #33658A;
+}
+
+nav a:focus,
+nav a:hover {
+
+    background-color: #33658A;
+    color:#FFF;
+
+}
+
+nav a:active {
+    background-color: #0000;
+    color:#FFF;
+}
+
+/* section */
+.main-section {
+    display:flex;
+}
+
+article {
+    width:75%;
+}
+
+.article-image {
+    float:left;
+    margin:0 1rem 0 0;
+}
+
+.article-image + p {
+    margin-top:0;
+}
+
+/*subsection */
+.subsection {
+    margin-top:4rem;
+    margin-bottom:2rem;
+    padding:0;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(5rem,1fr));
+    grid-column-gap:1%;
+}
+.subsection figure {
+    padding:0;
+    margin:0;
+    background-color:#EED;
+}
+
+.subsection figcaption {
+    font-size:.75rem;
+    padding:.75rem;
+}
+
+.subsection img {
+    padding-bottom: 1%;
+    min-width:5rem;
+}
+
+/* side bar */
+
+aside {
+    clear:both;
+    width:19%;
+    margin-left:3%;
+    padding-left:3%;
+    border-left: .0625rem solid #333;
+}
+
+aside p {
+    font-size:.75rem;
+    padding-bottom:2rem;
+    border-bottom:.0625rem solid #333;
+}
+
+.expand {
+    font-size:.25rem;
+    display:block;
+    padding-top:.5rem;
+}
+
+button {
+    margin-top:1rem;
+    padding:1rem;
+    font-family:Ultra;
+    font-size:1.5rem;
+    text-transform:uppercase;
+    background-color:#27476E;
+    box-shadow:.187rem .187rem .187rem #333;
+    border:none;
+    border-radius:.625rem;
+    background-color:#27476E;
+}
+
+button a{
+    color:#EED;
+}
+
+/* footer */
+
+footer {
+    margin:6rem auto .5rem auto;
+    width:90%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1%;
+}
+
+footer :nth-child(2) {
+    text-align:right;
+}
+
+footer a {
+    font-family: ubuntu, serif;
+    color:#6F7D77;
+}
