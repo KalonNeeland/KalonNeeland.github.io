@@ -82,6 +82,7 @@ html {
 }
 
 /* Headings*/
+/* add span element to 2nd word */
 h1,
 h2 {
     letter-spacing:.125rem;
@@ -101,6 +102,7 @@ h2{
 
 /* NAV */
 
+/* add proper alignment */
 nav {
     padding-left: 0;
     padding-top: .25rem;
@@ -131,6 +133,9 @@ nav a:active {
 }
 
 /* section */
+
+/* fix image alignment to 75% width on screen */
+
 .main-section {
     display:flex;
 }
