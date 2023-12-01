@@ -63,6 +63,9 @@
     font-family: "Montserrat";
 }
 /* General Setup */
+* {
+    box-sizing: border-box;
+}
 
 body{
     padding:0;
@@ -80,6 +83,7 @@ main {
 html {
     font-size:16px;
 }
+
 
 /* Headings*/
 /* add span element to 2nd word */
@@ -159,7 +163,7 @@ article {
     margin-bottom:2rem;
     padding:0;
     display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(5rem,1fr));
+    grid-template-columns:repeat(auto-fit, minmax(5rem, 1fr));
     grid-column-gap:1%;
 }
 .subsection figure {
@@ -176,6 +180,11 @@ article {
 .subsection img {
     padding-bottom: 1%;
     min-width:5rem;
+}
+
+.subsection figure img{
+        width:75%;
+        max-width:25rem;
 }
 
 /* side bar */
