@@ -49,29 +49,30 @@
 /* ------ START WRITING YOUR CODE BELOW ------ */
 /*----Font Import--*/
 @font-face {    
-    src:
-    url("../fonts/josefinslab-regular.ttf"), format('TrueType');
+    src: url("../fonts/serif/josefinslab-regular.ttf"), format('TrueType');
     font-style:normal;
     font-weight:400 normal;
-    font-family: "JoseFinsLab";
+    font-family: JoseFinsLab;
 }
+
 @font-face {
-    src:
-    url("../fonts/montserrat-regular.ttf"), format('TrueType');
+    src: url("../fonts/sans-serif/montserrat-regular.ttf"), format('TrueType');
     font-style:normal;
     font-weight:400 normal;
-    font-family: "Montserrat";
+    font-family: Montserrat;
 }
 /* General Setup */
 * {
     box-sizing: border-box;
+    font-family: Montserrat;
 }
 
 body{
     padding:0;
-    margin:0;
+    margin:0 auto;
     font-size:1rem;
-
+    max-width: 104rem;
+    min-width:64rem;
 }
 
 main {
@@ -84,13 +85,18 @@ html {
     font-size:16px;
 }
 
+img {
+    width:100%;
+    max-width: 25rem;
+    display:block;
+}
 
 /* Headings*/
 /* add span element to 2nd word */
 h1,
 h2 {
     letter-spacing:.125rem;
-    font-family: JoseFinSlab, Georgia, 'Times New Roman', Times, serif;
+    font-family: JoseFinsLab, Georgia, 'Times New Roman', Times, serif;
 }
 
 h1{
@@ -98,6 +104,14 @@ h1{
     margin: 1.125rem;
     text-align: center;
     width:75%;
+    transform: rotate(-4deg);
+}
+
+.highlight {
+    color: red;
+    padding:0 1rem;
+    box-shadow: ;
+    background: ;
 }
 
 h2{
@@ -108,33 +122,38 @@ h2{
 
 /* add proper alignment */
 nav {
-    padding-left: 0;
-    padding-top: .25rem;
+    padding: 0 5%;
+    margin: 4rem 0;
+    border-top: solid .0625rem #33658A;
+    border-bottom: solid .0625rem #33658A;
 }
 
 nav a {
     text-decoration: none;
     display:inline-block;
-    width: 75%;
-    line-height: 3;
     text-align: center;
     font-size: 1.125rem;
-    margin-bottom: 1.5rem;
-    border: solid .0625rem #33658A;
+    padding: 2rem 6rem 2rem 0;
 }
 
-nav a:focus,
-nav a:hover {
+ nav :nth-child(even):focus,
+ nav :nth-child(even):hover,
+ nav :nth-child(even):active {
+    color: black;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    transform:rotate(-4deg) ;
+ }
 
-    background-color: #33658A;
-    color:#FFF;
+ nav :nth-child(odd):focus,
+ nav :nth-child(odd):hover,
+ nav :nth-child(odd):active {
+    color: black;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    transform:rotate(4deg) ;
+ }
 
-}
-
-nav a:active {
-    background-color: #0000;
-    color:#FFF;
-}
 
 /* section */
 
@@ -212,7 +231,7 @@ aside p {
 button {
     margin-top:1rem;
     padding:1rem;
-    font-family:Ultra;
+    font-family:JoseFinsLab;
     font-size:1.5rem;
     text-transform:uppercase;
     background-color:#27476E;
@@ -241,6 +260,6 @@ footer :nth-child(2) {
 }
 
 footer a {
-    font-family: ubuntu, serif;
+    font-family: JoseFinsLab, serif;
     color:#6F7D77;
 }
