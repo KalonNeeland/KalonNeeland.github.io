@@ -108,10 +108,10 @@ h1{
 }
 
 .highlight {
-    color: red;
+    color: white;
     padding:0 1rem;
-    box-shadow: ;
-    background: ;
+    box-shadow: darkred;
+    background-color: red ;
 }
 
 h2{
